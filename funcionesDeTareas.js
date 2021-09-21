@@ -8,7 +8,7 @@ const listar = (item, index) => {   // Función que entra como callback en el fo
 const crearTarea= title => {    // Función principal que crea, agrega y guarda una nueva tarea en el array de lista de tareas JSON.
     let nuevaTarea = {
         titulo : title,
-        estado : "Pendiente"
+        estado : "pendiente"
     }
     guardarTarea(nuevaTarea)
 }
@@ -24,7 +24,15 @@ const escribirJSON = (listTareasJs) =>{  // Función encargada de convertir el a
     fs.writeFileSync("./tareas.json",listTareasJSON); 
 }
 
+const filtrarPorEstado = (estado) => {  // Función encargada de filtrar el array de tareas por un estado determinado y mostrar los elementos que cumplen con dicho estado.
+    const listTareasJs = tareas
+    return console.log( listTareasJs.filter( elemento => elemento.estado == estado) ); 
+}
 
 
-module.exports = {crearTarea, listar}
+
+
+
+
+module.exports = {crearTarea, listar, filtrarPorEstado}
 
