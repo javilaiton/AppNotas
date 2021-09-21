@@ -1,22 +1,26 @@
 [
     {
         "titulo": "Tarea 1",
-        "estado": "Terminada"
+        "estado": "terminada"
     },
     {
         "titulo": "Tarea 2",
-        "estado": "En progreso"
+        "estado": "en progreso"
     },
     {
         "titulo": "Tarea 3",
-        "estado": "Pendiente"
+        "estado": "pendiente"
     },
     {
         "titulo": "tarea00",
-        "estado": "Pendiente"
+        "estado": "pendiente"
     },
     {
         "titulo": "tarea01",
-        "estado": "Pendiente"
+        "estado": "pendiente"
+    },
+    {
+        "titulo": "tarea02",
+        "estado": "pendiente"
     }
 ]
