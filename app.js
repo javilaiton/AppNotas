@@ -17,6 +17,11 @@ switch (accion) {
 
         break;
 
+    case "filtrar":
+        const estado = titulo
+        funciones.filtrarPorEstado(estado)
+        break;
+
     case undefined:
         console.log("Atención - Tienes que pasar una acción.")
         break;
